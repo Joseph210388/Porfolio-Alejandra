@@ -1,0 +1,10 @@
+export { default as StarIcon } from './StarIcon';
+export { default as PaintIcon } from './PaintIcon';
+export { default as BookIcon } from './BookIcon';
+export { default as PencilIcon } from './PencilIcon';
+export { default as MusicIcon } from './MusicIcon';
+export { default as HeartIcon } from './HeartIcon';
+export { default as SunIcon } from './SunIcon';
+export { default as AppleIcon } from './AppleIcon';
+export { default as StarsIcon } from './StarsIcon';
+export { default as NotebookIcon } from './NotebookIcon';
