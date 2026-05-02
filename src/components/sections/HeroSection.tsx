@@ -2,24 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { contact } from '../../data/contact';
 import { containerVariants, itemVariants } from '../../lib/animations';
-
-const DownloadSvg = () => (
-  <svg className="h-4 w-4 shrink-0" viewBox="0 0 20 20" fill="currentColor">
-    <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
-  </svg>
-);
-
-const PhoneSvg = () => (
-  <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
-  </svg>
-);
-
-const MailSvg = () => (
-  <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-  </svg>
-);
+import { DownloadIcon, PhoneIcon, MailIcon } from '../icons';
 
 export const HeroSection = React.forwardRef<HTMLDivElement, {}>(function HeroSection(_, ref) {
   return (
@@ -28,6 +11,7 @@ export const HeroSection = React.forwardRef<HTMLDivElement, {}>(function HeroSec
       id="home"
       className="relative isolate min-h-[100dvh] overflow-hidden flex flex-col justify-center box-border px-6 pt-6 pb-20 sm:px-10 sm:pt-8 sm:pb-20 md:px-14 md:py-12"
     >
+      
       
       <div className="relative z-[1] w-full flex flex-col justify-center flex-1 min-h-0">
         <div className="container mx-auto w-full max-w-5xl">
@@ -61,13 +45,11 @@ export const HeroSection = React.forwardRef<HTMLDivElement, {}>(function HeroSec
               <div className="mt-6 sm:mt-8 flex flex-col items-stretch sm:items-center md:items-start gap-3 w-full max-w-xs sm:max-w-sm">
                 {/* Descargar CV */}
                 <a
-                  href="https://github.com/Joseph210388/Porfolio-Alejandra/raw/7789017a1d080ae64c53788ec227082be531cf1a/Alejandra.pdf"
-                  download="CV_Alejandra_Rodriguez.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/pdf/CV_AlejandraLlorente.pdf"
+                  download="CV_AlejandraLlorente.pdf"
                   className="inline-flex items-center justify-center gap-2 bg-white text-brand-primary font-bold py-2.5 px-6 rounded-full hover:bg-opacity-90 transition-all duration-300 hover:scale-105 shadow-lg ring-2 ring-white/30 text-sm sm:text-base"
                 >
-                  <DownloadSvg />
+                  <DownloadIcon />
                   Descargar CV
                 </a>
 
@@ -77,14 +59,14 @@ export const HeroSection = React.forwardRef<HTMLDivElement, {}>(function HeroSec
                     href={`tel:${contact.phone}`}
                     className="flex flex-1 items-center justify-center gap-1.5 bg-white/10 hover:bg-white/20 border border-white/30 text-white py-2.5 px-3 rounded-full transition-all duration-300 hover:scale-105 text-xs sm:text-sm font-montserrat"
                   >
-                    <PhoneSvg />
+                    <PhoneIcon />
                     <span className="truncate">{contact.phone}</span>
                   </a>
                   <a
                     href={`mailto:${contact.email}`}
                     className="flex flex-1 items-center justify-center gap-1.5 bg-white/10 hover:bg-white/20 border border-white/30 text-white py-2.5 px-3 rounded-full transition-all duration-300 hover:scale-105 text-xs sm:text-sm font-montserrat"
                   >
-                    <MailSvg />
+                    <MailIcon />
                     <span className="truncate">Correo</span>
                   </a>
                 </div>

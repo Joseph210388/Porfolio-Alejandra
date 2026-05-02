@@ -24,3 +24,6 @@ export { default as PhotoEditingIcon } from './PhotoEditingIcon';
 export { default as VideoEditingIcon } from './VideoEditingIcon';
 export { default as PoemWritingIcon } from './PoemWritingIcon';
 export { default as LinkedInIcon } from './LinkedInIcon';
+export { default as CardPhone } from './CardPhoneIcon';
+export { default as CardMail } from './CardMailIcon';
+export { default as CardLinkedIn } from './CardLinkedInIcon';
