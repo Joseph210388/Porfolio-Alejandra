@@ -49,7 +49,7 @@ const AnimatedElement = ({
       animate={{
         x: startX + (Math.random() - 0.5) * 100,
         y: -50,
-        opacity: [0, 0.8, 0.8, 0],
+        opacity: [0, 0.5, 0.5, 0],
       }}
       transition={{
         duration,
@@ -58,7 +58,7 @@ const AnimatedElement = ({
         delay,
       }}
     >
-      <iconData.Icon size={40} color="rgba(255, 255, 255, 0.7)" />
+      <iconData.Icon size={40} color="rgba(255, 255, 255, 0.4)" />
     </motion.div>
   );
 };
