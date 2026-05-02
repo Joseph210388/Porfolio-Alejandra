@@ -90,7 +90,7 @@ export const HeroSection = React.forwardRef<HTMLDivElement, {}>(function HeroSec
               />
               {/* Foto */}
               <img
-                src="https://res.cloudinary.com/deqzz76ni/image/upload/v1761756524/6dc46268-d7b7-4885-b74b-142e4cca2110_dx8ja1.jpg"
+                src="/img/profile.jpeg"
                 alt="Alejandra Rodríguez"
                 className="relative z-[1] rounded-full w-44 h-44 sm:w-56 sm:h-56 md:w-80 md:h-80 object-cover border-4 border-white shadow-2xl"
               />
